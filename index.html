@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" ,initial-scale=1">
+    <title>Cha0tic's Portfolio</title>
+</head>
+<style>
+
+    @font-face {
+        font-family: "Carbon";
+        src: url("/assets/carbontype.ttf") format("truetype");
+    }
+
+    body {
+        background: #333;
+        display: grid;
+        place-items: center;
+    }
+
+    .typewriter {
+        color: white;
+        font-family: Carbon;
+        font-size: 5vw;
+        transform: translateY(35vh);
+        overflow: hidden;
+        border-right: .15em solid white;
+        padding-right: 0;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .25em;
+        animation:
+                typing 700ms steps(7, end),
+                blink-caret .5s step-end infinite;
+    }
+
+    .typewriter2 {
+        color: white;
+        font-family: Carbon;
+        font-size: 1vw;
+        transform: translateY(36vh);
+        overflow: hidden;
+        border-right: .15em solid white;
+        padding-right: 0;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .25em;
+        animation:
+                typing 1.5ms steps(24, end),
+                blink-caret .5s step-end infinite;
+    }
+
+    .header hr {
+        transform: translateY(8vh);
+
+    }
+
+    @keyframes typing {
+        0% { max-inline-size: 0 }
+        100% { max-inline-size: 100% }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: white }
+    }
+
+</style>
+<body>
+    <div class="header">
+        <hr>
+    </div>
+    <div>
+        <p class="typewriter">Cha0tic</p>
+        <p class="typewriter2">your javascript developer</p>
+    </div>
+</body>
+</html>
