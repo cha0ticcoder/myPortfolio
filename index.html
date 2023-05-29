@@ -12,6 +12,16 @@
         src: url("../myPortfolio/assets/carbontype.ttf") format("truetype");
     }
 
+    @keyframes typing {
+        0% { width: 0 }
+        100% { width: 100% }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: white }
+        50% { border-color: transparent }
+    }
+
     body {
         background: #333;
         display: grid;
@@ -50,11 +60,15 @@
                 blink-caret .5s step-end 1s infinite;
     }
 
-    .header {
+    .header p{
         color: white;
         font-family: "Arial Rounded MT Bold", serif;
         font-size: 1.5vw;
         white-space: nowrap;
+    }
+
+    #p1 {
+        transform: translateX(-10vh);
     }
 
     .line {
@@ -63,24 +77,11 @@
         transform: translateY(0vh);
     }
 
-    @keyframes typing {
-        0% { width: 0 }
-        100% { width: 100% }
-    }
-
-    @keyframes blink-caret {
-        from, to { border-color: white }
-        50% { border-color: transparent }
-    }
-
 </style>
 <body>
-    <div>
-        <p class="header">
-            About Me
-
-            Github
-        </p>
+    <div class="header">
+        <p id="p1">About me</p>
+        <p id="p2">Github</p>
     </div>
     <div>
         <hr class="line">
